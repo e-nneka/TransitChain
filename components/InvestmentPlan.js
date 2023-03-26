@@ -33,7 +33,7 @@ const InvestmentPlan = ({ icon, onClick, plan, duration, desc }) => {
         aria-label=''
         className='inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 cursor-pointer animate-bounce hover:animate-none'
       >
-        Invest Here.
+        Invest Now.
       </p>
 
       {/* This div contains an SVG icon */}

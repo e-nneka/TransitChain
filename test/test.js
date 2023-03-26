@@ -21,9 +21,9 @@ describe('TransitChain contract', function () {
 
   it('should allow an investor to invest and get investment details', async () => {
     const transitChain = await TransitChain.deployed()
-    const numDays = 10
+    const numberOfDays = 10
     const investmentValue = web3.utils.toWei('1', 'ether') // or whatever amount you want to invest
-    await transitChain.invest(numDays, {
+    await transitChain.invest(numberOfDays, {
       value: investmentValue,
       from: accounts[1],
     })
@@ -33,7 +33,7 @@ describe('TransitChain contract', function () {
     assert.equal(
       investment.investmentInterest,
       await transitChain.calculateInvestmentInterest(
-        lifeTime[numDays],
+        lifeTime[numberOfDays],
         investmentValue
       )
     )

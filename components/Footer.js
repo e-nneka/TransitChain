@@ -3,11 +3,11 @@ import Link from 'next/link' // Importing the Link component from Next.js
 const Footer = () => {
   // Defining a functional component called Footer
   return (
-    <div className='relative mt-64 bg-deep-purple-accent-400 bg-[#008000]'>
+    <div className='relative mt-64 bg-deep-purple-accent-400 bg-[#49897a]'>
       {' '}
       {/* A div container with background color and CSS classes */}
       <svg
-        className='absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-[#008000] -z-1' // An SVG element with CSS classes and styles
+        className='absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-[#49897a] -z-1' // An SVG element with CSS classes and styles
         preserveAspectRatio='none'
         viewBox='0 0 1440 54'
       >
@@ -30,8 +30,8 @@ const Footer = () => {
           {/* A flex container with CSS classes */}
           <p className='text-sm text-gray-100 text-center'>
             {' '}
-            {/* A paragraph element with CSS classes */}© Copyright 2023
-            TransitChain Inc.
+            {/* A paragraph element with CSS classes */}© Copyright 2023 TransitChain
+             Inc. All rights reserved.
           </p>
           <div className='flex items-center mt-4 space-x-4 sm:mt-0'></div>{' '}
           {/* A div container with CSS classes */}

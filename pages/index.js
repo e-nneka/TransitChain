@@ -2,22 +2,22 @@
 import { CONTRACT_ABI, CONTRACT_ADDRESS } from '../utils/contractUtils'
 
 // Importing necessary components for the Home page
-import InvestmentHeader from '@/src/components/InvestmentHeader'
-import InvestmentPlan from '@/src/components/InvestmentPlan'
-import InvestmentForm from '../src/components/InvestmentForm'
-import InvestmentList from '@/src/components/InvestmentList'
-import HeroBanner from '../src/components/HeroBanner'
-import Header from '../src/components/Header'
-import NavBar from '../src/components/Navbar'
-import Footer from '../src/components/Footer'
+import InvestmentHeader from '@/components/InvestmentHeader'
+import InvestmentPlan from '@/components/InvestmentPlan'
+import InvestmentForm from '../components/InvestmentForm'
+import InvestmentList from '@/components/InvestmentList'
+import HeroBanner from '../components/HeroBanner'
+import Header from '../components/Header'
+import NavBar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 // Importing hooks from react
 import { useEffect, useState } from 'react'
 
 // Importing necessary icons from react-icons
-import { GiFruitTree } from 'react-icons/gi'
-import { FaSeedling } from 'react-icons/fa'
-import { MdGrass } from 'react-icons/md'
+import { FaMoneyCheckAlt } from 'react-icons/fa'
+import { CgMoveUp } from 'react-icons/cg'
+import { FaSortAmountUpAlt } from 'react-icons/fa'
 
 // Importing ethers library for interacting with the Ethereum blockchain
 import { ethers } from 'ethers'
@@ -73,17 +73,17 @@ const Home = () => {
   }
 
   // The following function takes in a maturity date and returns the number of days left until that date.
-  const daysToMaturity = (maturityDate) => {
+  const daysToMaturity = (maturityPeriod) => {
     // If the maturity date is not a number, an error is logged to the console.
-    if (isNaN(maturityDate)) {
-      console.error('Invalid date:', maturityDate)
+    if (isNaN(maturityPeriod)) {
+      console.error('Invalid date:', maturityPeriod)
       // 0 is returned.
       return 0
     }
     // The current time in seconds is divided by 1000 to convert it to milliseconds.
     const currentTime = Date.now() / 1000
     // The number of seconds left until the maturity date is calculated.
-    const secondsLeft = maturityDate - currentTime
+    const secondsLeft = maturityPeriod - currentTime
     // The number of days left is calculated and rounded down to the nearest whole number.
     // If the result is negative, 0 is returned instead.
     return Math.max((secondsLeft / 60 / 60 / 24).toFixed(0), 0)
@@ -102,9 +102,9 @@ const Home = () => {
       // The details of each investment are parsed and saved in an array of objects.
       const parsedInvestments = passQueryInvestments.map((Investment) => ({
         investmentId: Investment.investmentId,
-        interestRate: Number(Investment.interestRate) / 100,
-        daysRemaining: daysToMaturity(Number(Investment.maturityDate)),
-        etherInterest: convertToEther(Investment.investmentInterest),
+        dividendRate: Number(Investment.dividendRate) / 100,
+        daysRemaining: daysToMaturity(Number(Investment.maturityPeriod)),
+        etherInterest: convertToEther(Investment.investmentDividend),
         etherStaked: convertToEther(Investment.investedToken),
         open: Investment.open,
       }))
@@ -253,31 +253,30 @@ const Home = () => {
         />
       </div>
       <Header />
-      <HeroBanner />
 
       <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
         <InvestmentHeader />
         <div className='grid gap-8 row-gap-0 grid-cols-3'>
-          <InvestmentPlan
-            icon={FaSeedling}
-            plan='SEEDLING'
+        <InvestmentPlan
+            icon={FaMoneyCheckAlt}
+            plan='SHORT TERM'
             duration='90 DAYS'
-            desc='Invest for 90 days and earn 2% interest - the perfect short-term plan for quick and steady growth.'
+            desc='By investing in our platform for a period of three months, you can earn a solid 2% interest rate on your investment.'
             onClick={() => investButton(90, '2%')}
           />
 
           <InvestmentPlan
-            icon={MdGrass}
-            plan='SAPLING'
+            icon={CgMoveUp}
+            plan='MID TERM'
             duration='180 DAYS'
-            desc='Looking for a long-term investment strategy? Invest for 180 days and earn 5% interest - a smart choice for those seeking stability and substantial returns.'
+            desc='By investing in our platform for a period of six months, you can earn a competitive 5% interest rate, ensuring steady and substantial growth of your investment.'
             onClick={() => investButton(180, '5%')}
           />
           <InvestmentPlan
-            icon={GiFruitTree}
-            plan='HARVEST'
+            icon={FaSortAmountUpAlt}
+            plan='LONG TERM'
             duration='365 DAYS'
-            desc='Ready for a big investment payoff? Invest for 365 days and earn a whopping 12% interest - the ultimate choice for those who want to maximize their returns and reach their financial goals faster'
+            desc='By investing in our platform for a period of one year, you can earn an impressive 12% interest rate, providing substantial growth and returns on your investment.'
             onClick={() => investButton(365, '12%')}
           />
         </div>

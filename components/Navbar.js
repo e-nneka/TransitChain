@@ -10,7 +10,7 @@ const NavBarItem = ({ title, classprops, link }) => (
 
   <li
     // Setting the class name of the <li> element with dynamic classes
-    className={`font-medium tracking-wide text-[#777] transition-colors duration-200 hover:text-deep-purple-accent-400 cursor-pointer ${classprops}`}
+    className={`font-medium tracking-wide text-[#777] transition-colors duration-200 hover:text-deep-purple-accent-400 cursor-pointer ${classprops} bg-[#49897a]`}
   >
     <Link href={`${link}`}>{title}</Link>
   </li>
@@ -22,7 +22,7 @@ export const Navbar = (props) => {
 
   return (
     // Creating a container element for the entire navigation bar
-    <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+    <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-[#49897a]'>
       <div className='relative flex items-center justify-between'>
         {/* Creating a Logo for the Navbar */}
         <Link
@@ -31,7 +31,7 @@ export const Navbar = (props) => {
           title='LOGIC'
           className='inline-flex items-center'
         >
-          <span className='ml-2 text-xl font-bold tracking-wide uppercase'>
+          <span className='ml-2 text-xl font-bold tracking-wide uppercase text-gray-100'>
             TransitChain
           </span>
         </Link>
@@ -54,7 +54,7 @@ export const Navbar = (props) => {
           <li>
             {props.walletConnected() ? (
               <p
-                className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none cursor-pointer'
+                className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-gray-100 transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none cursor-pointer'
                 aria-label='Connected'
                 title='Connected'
               >
