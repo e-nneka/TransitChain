@@ -30,7 +30,7 @@ const Footer = () => {
           {/* A flex container with CSS classes */}
           <p className='text-sm text-gray-100 text-center'>
             {' '}
-            {/* A paragraph element with CSS classes */}© Copyright 2023 TransitChain
+            {/* A paragraph element with CSS classes */}© Copyright 2023 TransitFlow
              Inc. All rights reserved.
           </p>
           <div className='flex items-center mt-4 space-x-4 sm:mt-0'></div>{' '}

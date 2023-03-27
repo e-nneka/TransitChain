@@ -33,7 +33,7 @@ const Header = () => {
           <p className="text-gray-700">
             With the increase in online shopping and global trade,
             there is a high demand for reliable and efficient freight logistics services.
-            By investing in TransitChain, you can contribute to the growth of this industry
+            By investing in TransitFlow, you can contribute to the growth of this industry
             while also generating potential returns on your investment.
             As an investor, you'll have the opportunity to be a part of a dynamic
             industry that is constantly evolving and growing, and benefit from the expertise
@@ -52,7 +52,7 @@ const Header = () => {
           <p className="text-gray-700">
             With the surge in online shopping and same-day delivery demands,
             there is a high demand for reliable and efficient delivery services.
-            By investing in TransitChain, you can contribute to the growth of this industry
+            By investing in TransitFlow, you can contribute to the growth of this industry
             while also generating potential returns on your investment.
             As an investor in our delivery services, you can be confident that your investment
             is being managed by a team of experienced professionals with a proven track record of success.
@@ -71,7 +71,7 @@ const Header = () => {
             By investing in our car sharing and public transportation services, you can contribute to
             the growth of a more sustainable and eco-friendly transportation system
             while also generating potential returns on your investment. With a proven
-            track record of success and a growing customer base, investing in TransitChain's car sharing
+            track record of success and a growing customer base, investing in TransitFlow's car sharing
             and public transportation services can provide a stable and profitable investment opportunity.
           </p>
         </div>

@@ -32,7 +32,7 @@ export const Navbar = (props) => {
           className='inline-flex items-center'
         >
           <span className='ml-2 text-xl font-bold tracking-wide uppercase text-gray-100'>
-            TransitChain
+            TransitFlow
           </span>
         </Link>
         {/* Creating the navigation items */}

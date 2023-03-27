@@ -260,23 +260,23 @@ const Home = () => {
             icon={FaMoneyCheckAlt}
             plan='SHORT TERM'
             duration='90 DAYS'
-            desc='By investing in our platform for a period of three months, you can earn a solid 2% interest rate on your investment.'
-            onClick={() => investButton(90, '2%')}
+            desc='By investing in our platform for a period of three months, you can earn a solid 5% interest rate on your investment.'
+            onClick={() => investButton(90, '5%')}
           />
 
           <InvestmentPlan
             icon={CgMoveUp}
             plan='MID TERM'
             duration='180 DAYS'
-            desc='By investing in our platform for a period of six months, you can earn a competitive 5% interest rate, ensuring steady and substantial growth of your investment.'
-            onClick={() => investButton(180, '5%')}
+            desc='By investing in our platform for a period of six months, you can earn a competitive 10% interest rate, ensuring steady and substantial growth of your investment.'
+            onClick={() => investButton(180, '10%')}
           />
           <InvestmentPlan
             icon={FaSortAmountUpAlt}
             plan='LONG TERM'
             duration='365 DAYS'
-            desc='By investing in our platform for a period of one year, you can earn an impressive 12% interest rate, providing substantial growth and returns on your investment.'
-            onClick={() => investButton(365, '12%')}
+            desc='By investing in our platform for a period of one year, you can earn an impressive 15% interest rate, providing substantial growth and returns on your investment.'
+            onClick={() => investButton(365, '15%')}
           />
         </div>
       </div>

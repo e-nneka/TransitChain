@@ -29,13 +29,13 @@ const InvestmentTable = ({ investments, withdrawInvestment }) => {
                         <td className='py-4 px-6 text-left'>
                           <div className='flex items-center'>
                             <div className='mr-3'>
-                              {user.dividendRate === 2 && (
+                              {user.dividendRate === 5 && (
                                 <span className='text-green-500 font-medium'>Short Term</span>
                               )}
-                              {user.dividendRate === 5 && (
+                              {user.dividendRate === 10 && (
                                 <span className='text-green-500 font-medium'>Mid Term</span>
                               )}
-                              {user.dividendRate === 12 && (
+                              {user.dividendRate === 15 && (
                                 <span className='text-green-500 font-medium'>Long Term</span>
                               )}
                             </div>

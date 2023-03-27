@@ -2,9 +2,9 @@
 
 pragma solidity 0.8.18;
 
-contract TransitChain {
+contract TransitFlow {
     // Declare a public variable to store the contract creator's address
-    address public transitChainManager;
+    address public transitFlowManager;
 
     // Define a struct to represent an investment made in the TransitChain
     struct Investment {
@@ -38,15 +38,15 @@ contract TransitChain {
     // Constructor function that runs when the contract is deployed
     constructor() payable {
         // Set the address of the contract deployer as the transit chain manager
-        transitChainManager = msg.sender;
+        transitFlowManager = msg.sender;
 
         // Set the currentInvestmentId to 0
         currentInvestmentId = 0;
 
         // Set dividend rates for different investment durations
-        investmentdividendRates[90] = 200; // 200 basis points (2%)
-        investmentdividendRates[180] = 500; // 500 basis points (5%)
-        investmentdividendRates[365] = 1200; // 1200 basis points (12%)
+        investmentdividendRates[90] = 500; // 500 basis points (5%)
+        investmentdividendRates[180] = 1000; // 1000 basis points (10%)
+        investmentdividendRates[365] = 1500; // 1500 basis points (15%)
 
         // Add the investment durations to the investmentDuration array
         investmentDuration.push(90);
@@ -68,11 +68,11 @@ contract TransitChain {
             msg.value, // Amount invested
             computeInvestmentReturns( investmentdividendRates[numberOfDays], msg.value ), // Returns on the investment
             true
-             );
-             // Add the new investment ID to the array of investments for the investor's address
-             investmentIdsByAddress[msg.sender].push(currentInvestmentId);
-             // Increment the investment ID counter
-             currentInvestmentId += 1;
+        );
+            // Add the new investment ID to the array of investments for the investor's address
+            investmentIdsByAddress[msg.sender].push(currentInvestmentId);
+            // Increment the investment ID counter
+            currentInvestmentId += 1;
     }
 
     // This function returns an array of investment durations in days
@@ -83,7 +83,7 @@ contract TransitChain {
     // This function allows the TransitChain Manager to adjust the investment timeframe
     // by specifying the number of days and the dividend rate in basis points.
     function adjustInvestmentTimeframe(uint256 numberOfDays, uint256 basisPoints) external {
-        require(transitChainManager == msg.sender, "Only TransitChain Manager can adjust Investment Duration" );
+        require(transitFlowManager == msg.sender, "Only TransitChain Manager can adjust Investment Duration" );
         investmentdividendRates[numberOfDays] = basisPoints;
         investmentDuration.push(numberOfDays);
     }
@@ -109,7 +109,7 @@ contract TransitChain {
     function setNewmaturityPeriod(uint256 investmentId, uint256 newmaturityPeriod) external {
 
     // Check that the caller is the TransitChain Manager
-    require(transitChainManager == msg.sender, "Only TransitChain Manager can adjust unlock dates" );
+    require(transitFlowManager == msg.sender, "Only TransitChain Manager can adjust unlock dates" );
 
     // Check that the investment is still open
     require(investments[investmentId].open == true, "Investment is closed");
