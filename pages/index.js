@@ -1,12 +1,11 @@
 // Importing CONTRACT_ABI and CONTRACT_ADDRESS from contractUtils file
-import { CONTRACT_ABI, CONTRACT_ADDRESS } from '../utils/contractUtils'
+import { CONTRACT_ABI, CONTRACT_ADDRESS } from '../contract_utils/contractUtils'
 
 // Importing necessary components for the Home page
 import InvestmentHeader from '@/components/InvestmentHeader'
 import InvestmentPlan from '@/components/InvestmentPlan'
 import InvestmentForm from '../components/InvestmentForm'
 import InvestmentList from '@/components/InvestmentList'
-import HeroBanner from '../components/HeroBanner'
 import Header from '../components/Header'
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'

@@ -27,19 +27,15 @@ const InvestmentForm = (props) => {
           <div className='md:flex items-center'>
             <div className='mt-4 md:mt-0 md:ml-6 text-center md:text-left'>
               <p className='font-bold'>
-                You Chose the {InvestmentPercentage} for {InvestmentDuration}{' '}
+                You selected the {InvestmentPercentage} for {InvestmentDuration}{' '}
                 days Plan!{' '}
               </p>
               <p className='text-sm text-gray-700 my-8'>
-                Invest your funds with us and enjoy guaranteed returns on
-                investment of {InvestmentPercentage} for {InvestmentDuration}{' '}
-                days. We offer you the security and peace of mind you deserve as
-                an investor. While we are confident you will want to keep your
-                funds invested until maturity, we understand that unexpected
-                circumstances may arise. If you choose to withdraw your
-                investment before the maturity date, you will receive a full
-                refund of your principal, but no profit. Invest with us today
-                and watch your money grow!
+                Invest your funds with us for {InvestmentDuration} days
+                and enjoy a guaranteed return of {InvestmentPercentage}.
+                We prioritize investor security and offer a full principal
+                refund if you withdraw before maturity, with no profit.
+                Start investing with us today and watch your funds grow!
               </p>{' '}
               <input
                 className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
