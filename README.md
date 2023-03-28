@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## PROJECT DESCRIPTION
+TransitFlow is a next-generation decentralized application (dapp) that revolutionizes the transportation industry by connecting shippers, carriers, and other stakeholders in a transparent and secure manner. It allows users to access a decentralized marketplace where they can secure capital for their transportation needs, such as freight and logistics, delivery services, and other related ventures.
 
-## Getting Started
+Through the use of smart contracts and tokenization, TransitFlow streamlines the transportation process by enabling users to invest in tokens that represent a percentage of the overall transportation investment, thus earning returns based on their contribution. With its secure and transparent platform, TransitFlow empowers users to optimize their supply chain, increase their efficiency, and reduce costs associated with traditional transportation methods.
 
-First, run the development server:
+## PROJECT LINK
 
-```bash
+
+## SMART CONTRACT URL
+https://mumbai.polygonscan.com/address/0xe2262d97Eb8b8d07eCcc24C5860DB425b1A09A33#code
+
+## PROJECT DEPENDENCIES
+The application relies on a variety of external resources, including dependencies, frameworks, and tool for building and development;
+* Solidity - For writing Smart Contracts.
+* Remix - For developing and testing the smart contract.
+* Hardhat - A development environment and testing framework for building smart contracts on the Ethereum blockchain.
+* Javascript - A programming language used for front-end development.
+* React.js - Frontend framework for building user interfaces for web and mobile applications.
+* Ethers.js -A JavaScript library used for interacting with the Ethereum blockchain.
+
+## HOW TO RUN THE PROJECT LOCALLY
+* Clone this repo
+git clone https://github.com/e-nneka/TransitFlow
+
+* Install the dependencies
+npm install
+
+* Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Connect your MetaMask
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* Make investments
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## NOTE
+TO TEST THIS DAPP, PLEASE ENSURE YOU USE MATIC'S MUMBAI TESTNET IF YOU ARE TESTING IT THROUGH THE URL PROVIDED ABOVE. HOWEVER, IF YOU ARE TESTING THIS DAPP LOCALLY, YOU SHOULD INVEST IN THE FRONTEND USING THE SAME TOKEN THAT WAS USED TO DEPLOY THE SMART CONTRACT. FOR EXAMPLE, IF YOU DEPLOYED THE SMART CONTRACT USING MATIC, THEN YOU SHOULD ALSO USE MATIC TO INVEST IN THE FRONTEND.
