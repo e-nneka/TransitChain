@@ -4,7 +4,7 @@ TransitFlow is a next-generation decentralized application (dapp) that revolutio
 Through the use of smart contracts and tokenization, TransitFlow streamlines the transportation process by enabling users to invest in tokens that represent a percentage of the overall transportation investment, thus earning returns based on their contribution. With its secure and transparent platform, TransitFlow empowers users to optimize their supply chain, increase their efficiency, and reduce costs associated with traditional transportation methods.
 
 ## PROJECT LINK
-
+https://transit-flow.vercel.app/
 
 ## SMART CONTRACT URL
 https://mumbai.polygonscan.com/address/0xe2262d97Eb8b8d07eCcc24C5860DB425b1A09A33#code
@@ -19,13 +19,13 @@ The application relies on a variety of external resources, including dependencie
 * Ethers.js -A JavaScript library used for interacting with the Ethereum blockchain.
 
 ## HOW TO RUN THE PROJECT LOCALLY
-* Clone this repo
+* Clone this repo: 
 git clone https://github.com/e-nneka/TransitFlow
 
-* Install the dependencies
+* Install the dependencies:
 npm install
 
-* Run the development server
+* Run the development server:
 npm run dev
 
 * Connect your MetaMask
