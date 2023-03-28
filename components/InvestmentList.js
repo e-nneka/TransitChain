@@ -4,7 +4,7 @@ const InvestmentTable = ({ investments, withdrawInvestment }) => {
   return (
     <div>
       {/* Header for the table */}
-      <h2 className='max-w-lg my-10 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto'>
+      <h2 className='max-w-lg my-10 font-sans text-3xl font-bold leading-none tracking-tight text-[#49897a] sm:text-4xl md:mx-auto'>
         See Your Investments Status
       </h2>
       <div className='overflow-x-auto '>
@@ -14,7 +14,7 @@ const InvestmentTable = ({ investments, withdrawInvestment }) => {
             <div className='bg-white rounded-lg shadow-lg'>
               <table className='w-full table-auto'>
                 <thead>
-                  <tr className='bg-gray-200 text-gray-600 uppercase text-sm leading-normal'>
+                  <tr className='bg-[#49897a] text-white uppercase text-sm leading-normal'>
                     <th className='py-3 px-2 text-left font-semibold'>Plan</th>
                     <th className='py-3 px-2 text-left font-semibold'>Amount</th>
                     <th className='py-3 px-2 text-center font-semibold'>Current Interest</th>

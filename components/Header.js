@@ -5,8 +5,8 @@ const Header = () => {
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
         <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
-          <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
-            CUTTING-EDGE BLOCKCHAIN TECHNOLOGY       
+          <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-[#49897a] sm:text-4xl sm:leading-none'>
+            INNOVATIVE BLOCKCHAIN SOLUTIONS      
           </h2>
           </div> 
         
@@ -27,7 +27,7 @@ const Header = () => {
             src="https://www.freshbooks.com/wp-content/uploads/2022/03/8-steps-to-starting-a-successful-transport-business.jpg"
             alt=""
           />
-          <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
+          <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl text-[#49897a]">
             LOGISTICS
           </h5>
           <p className="text-gray-700">
@@ -46,7 +46,7 @@ const Header = () => {
             src="https://media.istockphoto.com/id/1325350394/photo/package-boxes-on-pallets-loading-into-cargo-container-trucks-parked-loading-at-dock-warehouse.jpg?s=612x612&w=0&k=20&c=FtIxuVhGpQeWNPjzlF4domcCwbkZNKFnqVpRGZk4ySs="
             alt=""
           />
-          <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
+          <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl text-[#49897a]">
             DELIVERY
           </h5>
           <p className="text-gray-700">
@@ -64,7 +64,7 @@ const Header = () => {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBcqsydAJthR2uOWpZ5XSuuGGl8SvEcUgDjDaZagMdsiHMK-k&s"
             alt=""
           />
-          <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
+          <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl text-[#49897a]">
             CAR SHARING AND PUBLIC TRANSPORTATION
           </h5>
           <p className="text-gray-700">
