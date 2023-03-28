@@ -3,6 +3,8 @@ TransitFlow is a next-generation decentralized application (dapp) that revolutio
 
 Through the use of smart contracts and tokenization, TransitFlow streamlines the transportation process by enabling users to invest in tokens that represent a percentage of the overall transportation investment, thus earning returns based on their contribution. With its secure and transparent platform, TransitFlow empowers users to optimize their supply chain, increase their efficiency, and reduce costs associated with traditional transportation methods.
 
+In this project, stakeholders have the option to invest in one of three packages: short-term, mid-term, and long-term. The short-term package has a 30-day plan with a 5% interest rate, while the mid-term plan is a 90-day package with a 10% interest rate, and the long-term plan is a 365-day package with a 15% interest rate. If stakeholders withdraw their investment before the maturity date, they will receive a full refund of their capital without any profits.
+
 ## PROJECT LINK
 https://transit-flow.vercel.app/
 
