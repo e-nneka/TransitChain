@@ -1,4 +1,4 @@
-const InvestmentPlan = ({ icon, onClick, plan, duration, desc }) => {
+const InvestmentDetails = ({ icon, onClick, plan, duration, desc }) => {
   const Icon = icon;
 
   return (
@@ -34,4 +34,4 @@ const InvestmentPlan = ({ icon, onClick, plan, duration, desc }) => {
   );
 };
 
-export default InvestmentPlan;
+export default InvestmentDetails;

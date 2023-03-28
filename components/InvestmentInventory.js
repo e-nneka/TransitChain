@@ -1,5 +1,4 @@
-// Declaring a functional component named InvestmentTable, which accepts props 'investments' and 'withdrawInvestment'
-const InvestmentTable = ({ investments, withdrawInvestment }) => {
+const InvestmentTracker = ({ investments, withdrawInvestment }) => {
   // Returning the JSX code that will be rendered on the browser
   return (
     <div>
@@ -80,4 +79,4 @@ const InvestmentTable = ({ investments, withdrawInvestment }) => {
   )
 }
 
-export default InvestmentTable
+export default InvestmentTracker

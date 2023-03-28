@@ -1,4 +1,4 @@
-const InvestmentForm = (props) => {
+const InvestmentDetailsForm = (props) => {
   const {
     onClose,
     InvestmentDuration,
@@ -31,7 +31,7 @@ const InvestmentForm = (props) => {
                 Start investing with us today and watch your funds grow!
               </p>
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-[#49897a] text-white border border-[#49897a] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#49897a]"
                 id="grid-zip"
                 type="text"
                 placeholder="0.1 and above"
@@ -53,4 +53,4 @@ const InvestmentForm = (props) => {
   );
 };
 
-export default InvestmentForm;
+export default InvestmentDetailsForm;

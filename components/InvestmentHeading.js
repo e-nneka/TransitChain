@@ -1,5 +1,5 @@
 
-const InvestmentHeader = () => {
+const InvestmentHeading = () => {
 
   return (
     <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
@@ -12,4 +12,4 @@ const InvestmentHeader = () => {
 }
 
 
-export default InvestmentHeader
+export default InvestmentHeading
